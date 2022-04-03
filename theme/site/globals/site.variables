@@ -58,7 +58,7 @@
    Menu
 --------------------*/
 
-@mainMenuInvertedBackground: @orange;
+@mainMenuInvertedBackground: #f48a20;
 @mainMenuTutorialBackground: @teal;
 @mainMenuTutorialButtons: @orange;
 

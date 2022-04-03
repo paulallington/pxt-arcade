@@ -2,18 +2,18 @@
     "id": "arcade",
     "name": "arcade",
     "nickname": "arcade",
-    "thumbnailName": "MakeCode Arcade",
-    "title": "Microsoft MakeCode Arcade",
+    "thumbnailName": "",
+    "title": "",
     "description": "Develop your programming skills by quickly creating and modding retro arcade games with Blocks and JavaScript in the MakeCode editor",
     "corepkg": "device",
     "cloud": {
         "workspace": false,
-        "sharing": true,
-        "thumbnails": true,
+        "sharing": false,
+        "thumbnails": false,
         "importing": true,
         "packages": true,
-        "publishing": true,
-        "githubPackages": true,
+        "publishing": false,
+        "githubPackages": false,
         "cloudProviders": {
             "github": {
                 "id": "github",
@@ -503,11 +503,6 @@
                 "popout": true
             },
             {
-                "name": "Hardware",
-                "path": "/hardware",
-                "popout": true
-            },
-            {
                 "name": "Forum",
                 "path": "https://forum.makecode.com"
             }
@@ -526,7 +521,7 @@
         ],
         "invertedMenu": true,
         "showHomeScreen": true,
-        "useTextLogo": true,
+        "useTextLogo": false,
         "highContrast": true,
         "greenScreen": true,
         "print": true,
@@ -576,6 +571,9 @@
         ],
         "scriptManager": true,
         "saveInMenu": false,
+        "showDelete": false,
+        "deleteInMenu": false,
+        "showReset": false,
         "debugger": true,
         "importExtensionFiles": true,
         "experiments": [
@@ -606,6 +604,7 @@
         "openProjectNewTab": true,
         "hasReferenceDocs": true,
         "python": true,
+        "javaScript": false,
         "assetEditor": true,
         "immersiveReader": true,
         "tutorialCodeValidation": true
