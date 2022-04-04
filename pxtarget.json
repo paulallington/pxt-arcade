@@ -607,7 +607,8 @@
         "javaScript": false,
         "assetEditor": true,
         "immersiveReader": true,
-        "tutorialCodeValidation": true
+        "tutorialCodeValidation": true,
+        "tczApi": true
     },
     "queryVariants": {
         "skillsMap=1": {
