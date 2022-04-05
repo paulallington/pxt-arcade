@@ -37,6 +37,10 @@
     justify-content: unset;
 }
 
+.right [aria-label='Edit'] {
+    display: none !important;
+}
+
 /* Open Sans font */
 @font-face {
     font-family: 'Share Tech Mono';
@@ -92,9 +96,16 @@
     color: @white!important;
 }
 
+#editortools .ui.button.editortools-btn, .simtoolbar .ui.button.icon {
+    background-color: #356c9b;
+}
 
 #homemenu .ui.item, #mainmenu .ui.item {
     color: @white;
+}
+
+#editorToolbarArea {
+    margin-right: 75px !important;
 }
 
 /* Mobile */

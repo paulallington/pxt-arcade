@@ -477,24 +477,24 @@
         }
     },
     "appTheme": {
-        "logoUrl": "https://makecode.com/org",
-        "logo": "./static/logo.svg",
-        "docsLogo": "./static/logo.svg",
-        "cardLogo": "./static/logo.png",
-        "portraitLogo": "./static/logo.svg",
-        "footerLogo": "./static/logo.svg",
-        "organization": "Microsoft MakeCode",
-        "organizationText": "MakeCode Arcade",
-        "organizationShortText": "MakeCode",
-        "organizationUrl": "https://makecode.com/org",
-        "organizationLogo": "./static/Micorsoft_logo_rgb_W-white_D-square.png",
-        "organizationWideLogo": "./static/Micorsoft_logo_rgb_W-white_D.png",
-        "homeUrl": "https://arcade.makecode.com/",
-        "embedUrl": "https://arcade.makecode.com/",
-        "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-        "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-        "githubUrl": "https://github.com/microsoft/pxt-arcade",
-        "boardName": "Arcade",
+        "logoUrl": "",
+        "logo": "",
+        "docsLogo": "",
+        "cardLogo": "",
+        "portraitLogo": "",
+        "footerLogo": "",
+        "organization": "The Code Zone",
+        "organizationText": "The Code Zone",
+        "organizationShortText": "The Code Zone",
+        "organizationUrl": "https://www.thecodezone.co.uk",
+        "organizationLogo": "",
+        "organizationWideLogo": "",
+        "homeUrl": "https://www.thecodezone.co.uk",
+        "embedUrl": "https://www.thecodezone.co.uk",
+        "privacyUrl": "https://www.thecodezone.co.uk/privacy",
+        "termsOfUseUrl": "https://www.thecodezone.co.uk/terms",
+        "githubUrl": "",
+        "boardName": "PyClub",
         "addNewTypeScriptFile": true,
         "docMenu": [
             {
@@ -608,7 +608,8 @@
         "assetEditor": true,
         "immersiveReader": true,
         "tutorialCodeValidation": true,
-        "tczApi": true
+        "tczApi": true,
+        "tczApiDomain": "https://stage.thecodezone.co.uk/"
     },
     "queryVariants": {
         "skillsMap=1": {

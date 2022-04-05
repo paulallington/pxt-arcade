@@ -58,7 +58,7 @@
    Menu
 --------------------*/
 
-@mainMenuInvertedBackground: #f48a20;
+@mainMenuInvertedBackground: #356c9b;
 @mainMenuTutorialBackground: @teal;
 @mainMenuTutorialButtons: @orange;
 
@@ -78,7 +78,7 @@
    Background
 --------------------*/
 
-@simulatorBackground: @blue;
+@simulatorBackground: #f7cb3f;
 @editorToolsBackground: @beige;
 @blocklySvgColor: @beige;
 
