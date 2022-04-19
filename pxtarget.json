@@ -13,7 +13,7 @@
         "importing": true,
         "packages": true,
         "publishing": false,
-        "githubPackages": false,
+        "githubPackages": true,
         "cloudProviders": {
             "github": {
                 "id": "github",
@@ -599,6 +599,7 @@
         "shareFinishedTutorials": true,
         "nameProjectFirst": true,
         "githubEditor": true,
+        "hideProjectRename": true,
         "githubCompiledJs": true,
         "chooseLanguageRestrictionOnNewProject": true,
         "openProjectNewTab": true,
@@ -609,7 +610,7 @@
         "immersiveReader": true,
         "tutorialCodeValidation": true,
         "tczApi": true,
-        "tczApiDomain": "https://stage.thecodezone.co.uk/"
+        "tczApiDomain": "https://api.thecodezone.co.uk/"
     },
     "queryVariants": {
         "skillsMap=1": {
