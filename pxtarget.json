@@ -13,7 +13,7 @@
         "importing": true,
         "packages": true,
         "publishing": false,
-        "githubPackages": true,
+        "githubPackages": false,
         "cloudProviders": {
             "github": {
                 "id": "github",
@@ -598,7 +598,7 @@
         "qrCode": true,
         "shareFinishedTutorials": true,
         "nameProjectFirst": true,
-        "githubEditor": true,
+        "githubEditor": false,
         "hideProjectRename": true,
         "githubCompiledJs": true,
         "chooseLanguageRestrictionOnNewProject": true,
