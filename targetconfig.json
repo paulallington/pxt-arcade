@@ -2,7 +2,6 @@
     "packages": {
         "approvedRepos": [
             "adafruit/Circuit-Playground-Character-Icons",
-            "adafruit/pxt-seesaw",
             "jwunderl/pxt-button-combos",
             "jwunderl/pxt-color",
             "jwunderl/pxt-status-bar",
