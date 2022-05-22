@@ -88,7 +88,6 @@
         "libs/palette",
         "libs/power",
         "libs/radio",
-        "libs/radio-broadcast",
         "libs/rotary-encoder",
         "libs/rpiprj",
         "libs/screen",
@@ -606,6 +605,7 @@
         "immersiveReader": true,
         "tutorialCodeValidation": true,
         "tczApi": true,
+        "secsBetweenSaves": 2,
         "tczApiDomain": "https://api.thecodezone.co.uk/"
     },
     "queryVariants": {
