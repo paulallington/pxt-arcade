@@ -640,7 +640,7 @@
         "immersiveReader": true,
         "tutorialCodeValidation": true,
         "multiplayerShareButton": true,
-        "songEditor": true
+        "songEditor": true,
         "tczApi": true,
         "secsBetweenSaves": 2,
         "tczApiDomain": ""
