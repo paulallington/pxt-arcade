@@ -635,7 +635,7 @@
         "openProjectNewTab": true,
         "hasReferenceDocs": true,
         "python": true,
-        "javaScript": false,
+        "javaScript": true,
         "assetEditor": true,
         "immersiveReader": true,
         "tutorialCodeValidation": true,
