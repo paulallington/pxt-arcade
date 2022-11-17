@@ -1,9 +1,9 @@
-# Whack'em All
-* name: Whack'em All
-* description: Create your own 'Whack-a-Mole' style of carnival game!
+# Whack-the-Mole
+* name: Whack-the-Mole
+* description: Create your own mole whacking carnival game. Double-click the first level to start.
 * infoUrl: skillmap/educator-info/mole-map-info
 * bannerUrl: /static/skillmap/mole/mole3.gif
-* backgroundurl: https://raw.githubusercontent.com/clkantner/whack/master/skillmap2-final.gif
+* backgroundurl: /static/skillmap/backgrounds/mole-comp.gif
 * primarycolor: #ffffff
 * secondarycolor: #fff53d
 * tertiarycolor: #82cd54
@@ -13,7 +13,7 @@
 * tags: easy, beginner, carnival
 
 
-## whackem-all
+## whack-the-mole
 * layout: manual
 
 
@@ -47,12 +47,22 @@
 * type: tutorial
 * description: Finish your game by adding a thrilling carnival sound and real frame-by-frame animations!
 * tags: easy, clicker, sprite, buttons
-* next: mole-cert
+* next: mole4
 * url: /skillmap/mole/mole3
 * imageUrl: /static/skillmap/mole/mole3.gif
 * position: 1 1
 
 
+
+### mole4
+* name: Play with Friends
+* type: tutorial
+* description: Want to play with friends? A few simple changes will have you playing chase in no time!
+* tags: easy, clicker, multiplayer, buttons
+* next: mole-cert
+* url: /skillmap/mole/mole4
+* imageUrl: /static/skillmap/mole/mole3.gif
+* position: 1 0
 
 
 ### mole-cert
@@ -61,15 +71,15 @@
 * type: certificate
 * url: /static/skillmap/certificates/mole-cert.pdf
 * imageUrl: /static/skillmap/certificates/mole-cert.png
+* showMultiplayerShare: true
 * position: 2 0
 * actions:
-    * map: [Finish the Last Level!](/skillmap/mole)
-    * editor: [Edit Your Project with a Full Toolbox](/)
+    * map: [Try Burstin' Balloons](/skillmap/balloon)
+    * editor: [Open in Creative Mode](/)
 * rewards:
     * certificate:
         * url: /static/skillmap/certificates/mole-cert.pdf
         * preview: /static/skillmap/certificates/mole-cert.png
     * completion-badge:
         * image: /static/badges/badge-mole.png
-        * name: Whack'em Mole
-
+        * name: Whack-the-Mole

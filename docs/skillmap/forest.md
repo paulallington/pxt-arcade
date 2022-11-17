@@ -1,6 +1,6 @@
 # Save the Forest
 * name: Save the Forest
-* description: The last few summers have been some of the hottest on record and the forest service needs you to help keep fires under control. Use blocks to code your airtanker and set up tech so your ground team can help you save the forest!
+* description: The last few summers have been some of the hottest on record and the forest service needs you to help keep fires under control. Use blocks to code your airtanker and set up tech so your ground team can help you save the forest! Double-click the first level to start.
 * infoUrl: skillmap/educator-info/forest-map-info
 * bannerUrl: /static/skillmap/forest/forest6.gif
 * backgroundurl: /static/skillmap/backgrounds/forest-comp.png
@@ -84,8 +84,8 @@
         * image: /static/badges/badge-forest.png
         * name: Save the Forest
 * actions:
-    * map: [Try the Jungle Monkey Skillmap](/skillmap/jungle)
-    * map: [Try the Space Explorer Skillmap](/skillmap/space)
+    * map: [Try Jungle Jump](/skillmap/jungle)
+    * map: [Try Space Explorer](/skillmap/space)
     * editor: [Edit Your Project with a Full Toolbox] (/)
 
 

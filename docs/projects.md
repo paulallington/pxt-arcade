@@ -80,9 +80,14 @@
         "largeImageUrl": "/static/courses/csp.png"
     },
     {
-        "name": "Hardware",
-        "url": "/hardware",
+        "name": "Arcade Compatible Devices",
+        "url": "/arcade-devices",
         "imageUrl": "/static/hardware/meowbit.png"
+    },
+    {
+        "name": "DIY Hardware",
+        "url": "/diy-hardware",
+        "imageUrl": "/static/hardware/raspberry-pi/wooden-cabinet/gallery.jpg"
     },
     {
         "name": "How to Make a Game Videos",
@@ -112,7 +117,8 @@
 [Arts and Crafts](/arts-and-crafts),
 [Lessons](/lessons),
 [Courses](/courses),
-[Hardware](/hardware),
+[Arcade Compatible Devices](/arcade-devices),
+[DIY Hardware](/diy-hardware),
 [How to Make a Game Videos](/how-to-make-a-game),
 [John Park's Workshop](/john-parks-workshop)
 

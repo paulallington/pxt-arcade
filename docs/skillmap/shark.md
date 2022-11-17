@@ -80,8 +80,8 @@
 * url: /static/skillmap/certificates/shark-cert.pdf
 * position: 3 0
 * actions:
-    * map: [Try Jungle Monkey Jump](/skillmap/jungle)
-    * editor: [Edit Your Project with a Full Toolbox](/)
+    * map: [Try Jungle Jump](/skillmap/jungle)
+    * editor: [Edit with Full Toolbox](/)
 * rewards:
     * certificate:
         * url: /static/skillmap/certificates/shark-cert.pdf

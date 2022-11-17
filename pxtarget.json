@@ -19,14 +19,14 @@
             "github": {
                 "id": "github",
                 "name": "GitHub",
-                "icon": "./static/providers/github-mark.png",
+                "icon": "/static/providers/github-mark.png",
                 "identity": false,
                 "order": 3
             },
             "microsoft": {
                 "id": "microsoft",
                 "name": "Microsoft",
-                "icon": "./static/providers/microsoft-logo.svg",
+                "icon": "/static/providers/microsoft-logo.svg",
                 "identity": true,
                 "redirect": true,
                 "order": 1
@@ -34,8 +34,8 @@
             "google": {
                 "id": "google",
                 "name": "Google",
-                "icon": "./static/providers/google-logo.svg",
-                "identity": false,
+                "icon": "/static/providers/google-logo.svg",
+                "identity": true,
                 "redirect": true,
                 "order": 2
             }
@@ -371,7 +371,7 @@
                 "codalTarget": {
                     "name": "codal-nrf52833-dk",
                     "url": "https://github.com/mmoskal/codal-nrf52833-dk",
-                    "branch": "v1.1.4",
+                    "branch": "v2.0.2",
                     "type": "git"
                 },
                 "codalBinary": "NRF52840_DK",
@@ -544,6 +544,7 @@
             "de",
             "fr",
             "ja",
+            "es-ES",
             "es-MX"
         ],
         "invertedMenu": true,
@@ -594,7 +595,8 @@
         },
         "monacoFieldEditors": [
             "image-editor",
-            "tilemap-editor"
+            "tilemap-editor",
+            "soundeffect-editor"
         ],
         "scriptManager": true,
         "saveInMenu": false,
@@ -611,7 +613,8 @@
             "tutorialBlocksDiff",
             "blocksErrorList",
             "identity",
-            "accessibleBlocks"
+            "accessibleBlocks",
+            "palettePicker"
         ],
         "blocksCollapsing": true,
         "errorList": true,
@@ -636,9 +639,11 @@
         "assetEditor": true,
         "immersiveReader": true,
         "tutorialCodeValidation": true,
+        "multiplayerShareButton": true,
+        "songEditor": true
         "tczApi": true,
         "secsBetweenSaves": 2,
-        "tczApiDomain": "https://api.thecodezone.co.uk/"
+        "tczApiDomain": ""
     },
     "queryVariants": {
         "skillsMap=1": {
