@@ -629,7 +629,7 @@
         "qrCode": true,
         "shareFinishedTutorials": true,
         "nameProjectFirst": true,
-        "githubEditor": false,
+        "githubEditor": true,
         "hideProjectRename": true,
         "githubCompiledJs": true,
         "chooseLanguageRestrictionOnNewProject": true,
