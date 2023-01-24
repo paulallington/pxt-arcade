@@ -641,6 +641,7 @@
         "immersiveReader": true,
         "tutorialCodeValidation": true,
         "multiplayer": true,
+        "shareToKiosk": true,
         "songEditor": true,
         "multiplayerShareButton": true,
         "tczApi": true,
