@@ -647,10 +647,8 @@
         "multiplayer": true,
         "shareToKiosk": true,
         "songEditor": true,
-        "multiplayerShareButton": true,
+        "tczApi": false,
         "tczApi": true,
-        "secsBetweenSaves": 2,
-        "tczApiDomain": ""
     },
     "queryVariants": {
         "skillsMap=1": {
