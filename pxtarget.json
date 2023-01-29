@@ -647,8 +647,7 @@
         "multiplayer": true,
         "shareToKiosk": true,
         "songEditor": true,
-        "tczApi": false,
-        "tczApi": true,
+        "tczApi": true
     },
     "queryVariants": {
         "skillsMap=1": {
