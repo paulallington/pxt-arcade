@@ -45,7 +45,7 @@ carnival.onGameOverExpanded(carnival.WinTypes.Multi)
 
 let myMouse: Sprite = null
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
 myBalloon.setPosition(80, 93)
@@ -92,10 +92,11 @@ hint~
 
 
 #### ~ tutorialhint
+
 ```blocks
 let myMouse: Sprite = null
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
 myBalloon.setPosition(50, 93)
@@ -207,6 +208,13 @@ Find a friend and have them press the (A) button or **space bar** while you pres
 
 
 
+```blockconfig.local
+let myMouse2: Sprite = null
+controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Released, function () {
+        myMouse2.setImage(img`.`)
+})
+```
+
 
 
 ## {9. Add a Label}
@@ -217,7 +225,7 @@ Find a friend and have them press the (A) button or **space bar** while you pres
 ```block
 carnival.addLabelTo("Burstin' Balloons", carnival.Areas.Mid)
 ```
-to **the end** of the ``||loops(noclick):on start||`` container to put a label on the booth so everyone knows the name of the game!
+to **the top** of the ``||loops(noclick):on start||`` container to put a label on the booth so everyone knows the name of the game!
 
 **Play your finished game a few times!  Who can get the best 2 out of 3?**
 
@@ -233,7 +241,13 @@ hint~
 
 
 
+
 ```blockconfig.local
+let myMouse2: Sprite = null
+controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Released, function () {
+        myMouse2.setImage(img`.`)
+})
+
 simplified.wrap(function () {
     let myBalloon3 = sprites.create(img`.`, SpriteKind.Player)
     myBalloon3.setPosition(110, 93)
@@ -249,7 +263,7 @@ let myBalloon2: Sprite = null
 let myMouse: Sprite = null
 let myBalloon: Sprite = null
 let myMouse2: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
 myBalloon.setPosition(50, 93)
@@ -281,7 +295,7 @@ When you're ready, click **Done** to return to the skillmap and click the button
 let myBalloon2: Sprite = null
 let myMouse2: Sprite = null
 info.player2.changeScoreBy(1)
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 myBalloon2 = sprites.create(img`.`, SpriteKind.Player)
 scene.setBackgroundColor(1)
 myBalloon2.setPosition(110, 93)
@@ -320,8 +334,8 @@ controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Relea
 ```package
 sprite-scaling
 carnival=github:microsoft/arcade-carnival
-simple-blocks=github:microsoft/arcade-tutorial-extensions/simple-blocks
-balloon-images=github:kiki-lee/balloon-images
+simple-blocks=github:microsoft/arcade-tutorial-extensions/simple-blocks#v0.0.7
+balloon-images=github:kiki-lee/balloon-images#v0.0.1
 ```
 
 
@@ -343,7 +357,7 @@ carnival.onGameOverExpanded(carnival.WinTypes.Multi)
 
 let myMouse: Sprite = null
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
 myBalloon.setPosition(80, 93)

@@ -31,7 +31,7 @@ If your code doesn't work, start by looking to see if you can figure out what is
 ```blocks
 
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
@@ -100,7 +100,7 @@ hint~
 ```blocks
 let myMouse: Sprite = null
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 
 scene.setBackgroundColor(1)
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)
@@ -290,7 +290,7 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
 
 ```blockconfig.global
 info.player1.changeScoreBy(1)
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 let myMouse = sprites.create(img`.`, SpriteKind.Mouse)
 scene.setBackgroundColor(1)
 myMouse.setPosition(80, 93)
@@ -301,12 +301,11 @@ myMouse.setImage(img`.`)
 
 ```
 
-
 ```package
 sprite-scaling
 carnival=github:microsoft/arcade-carnival
-simple-blocks=github:microsoft/arcade-tutorial-extensions/simple-blocks
-balloon-images=github:kiki-lee/balloon-images
+simple-blocks=github:microsoft/arcade-tutorial-extensions/simple-blocks#v0.0.7
+balloon-images=github:kiki-lee/balloon-images#v0.0.1
 ```
 
 
@@ -321,7 +320,7 @@ carnival.onGameOverExpanded(carnival.WinTypes.Multi)
 })
 
 let myBalloon: Sprite = null
-carnival.startCountdownGame(20, carnival.WinTypes.Win)
+carnival.startCountdownGame(20, carnival.WinTypes.Lose)
 scene.setBackgroundColor(1)
 
 myBalloon = sprites.create(assets.image`balloon-1`, SpriteKind.Player)

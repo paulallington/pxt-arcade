@@ -1,13 +1,13 @@
 # Text-Adventure
-* name: Your Big Adventure
-* description: Code your own text-based adventure based on the movie Dungeons & Dragons: Honor Among Thieves
+* name: Code an Adventure
+* description: Code your own text-based adventure inspired by the movie Dungeons & Dragons: Honor Among Thieves
 * infoUrl: skillmap/educator-info/adventure-info
-* bannerUrl: /static/skillmap/adventure/adventure3.gif
-* backgroundurl: /static/skillmap/backgrounds/adventure-comp.gif
+* bannerUrl: /static/skillmap/adventure/dd-logo.png
+* backgroundurl: /static/skillmap/backgrounds/adventure-comp1.png
 * primarycolor: #ffffff
 * secondarycolor: #fff53d
-* tertiarycolor: #82cd54
-* completednodecolor: #604c4e
+* tertiarycolor: #b1dcef
+* completednodecolor: #2f484d
 * highlightcolor: #ff0000
 * allowcodecarryover: true
 * tags: creative, intermediate, conditionals
@@ -20,66 +20,56 @@
 ### adventure1
 * allowcodecarryover: false
 
-* name: Rolling Dice
+* name: Start Your Journey
 * type: tutorial
-* description: Use a roll of the die to figure out what adventures your player will have.
-* tags: random, conditionals
-* next: mole2
+* description: Create an adventure using conditionals
+* tags: conditionals, text
+* next: adventure2
 * url: /test/skillmap/adventure/adventure1
-* imageUrl: /static/skillmap/adventure/adventure1.gif
-* position: -1 1
+* imageUrl: /static/skillmap/adventure/owlbear.png
+* position: 1 2
 
 
 
 ### adventure2
-* name: Rolling Dice
+* name: Make it Spectacular
 * type: tutorial
-* description: Use a roll of the die to figure out what adventures your player will have.
-* tags: random, conditionals
-* next: mole3
+* description: Create your own music and images to enhance out your adventure!
+* tags: music, functions
+* next: adventure3
 * url: /test/skillmap/adventure/adventure2
-* imageUrl: /static/skillmap/adventure/adventure2.gif
-* position: 0 1
-
-
-### adventure3
-* name: Get Animated
-* type: tutorial
-* description: Finish your game by adding a thrilling carnival sound and real frame-by-frame animations!
-* tags: easy, clicker, sprite, buttons
-* next: mole4
-* url: /test/skillmap/adventure/adventure3
-* imageUrl: /static/skillmap/adventure/adventure3.gif
+* imageUrl: /static/skillmap/adventure/bard.png
 * position: 1 1
 
 
-
-### adventure4
-* name: Play with Friends
+### adventure3
+* name: Lives and Gold
 * type: tutorial
-* description: Want to play with friends? A few simple changes will have you playing chase in no time!
-* tags: easy, clicker, multiplayer, buttons
-* next: mole-cert
-* url: /test/skillmap/adventure/adventure4
-* imageUrl: /static/skillmap/adventure/adventure3.gif
-* position: 1 0
+* description: Finish your game by adding more quests — including danger and rewards!
+* tags: lives, score, functions
+* next: adventure-cert
+* url: /test/skillmap/adventure/adventure3
+* imageUrl: /static/skillmap/adventure/mimic.png
+* position: 2 1
+
+
 
 
 ### adventure-cert
 * name: Congrats!
 * kind: completion
 * type: certificate
-* url: /static/skillmap/certificates/mole-cert.pdf
-* imageUrl: /static/skillmap/certificates/mole-cert.png
-* showMultiplayerShare: true
+* url: /static/skillmap/certificates/adventure-cert.pdf
+* imageUrl: /static/skillmap/certificates/adventure-cert.png
+* showMultiplayerShare: false
 * position: 2 0
 * actions:
     * map: [Try Burstin' Balloons](/skillmap/balloon)
     * editor: [Open in Creative Mode](/)
 * rewards:
     * certificate:
-        * url: /static/skillmap/certificates/mole-cert.pdf
-        * preview: /static/skillmap/certificates/mole-cert.png
+        * url: /static/skillmap/certificates/adventure-cert.pdf
+        * preview: /static/skillmap/certificates/adventure-cert.png
     * completion-badge:
-        * image: /static/badges/badge-mole.png
-        * name: Whack-the-Mole
+        * image: /static/badges/badge-adventure.png
+        * name: Code Adventure

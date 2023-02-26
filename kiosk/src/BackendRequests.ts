@@ -1,17 +1,19 @@
-const kioskBackendEndpoint: string = "https://makecode.com/api/kiosk";
-const apiBackendEndpoint: string = "https://makecode.com/api"
+const stagingEndpoint = "https://staging.pxt.io/api/kiosk"
+const kioskBackendEndpoint = "https://makecode.com/api/kiosk";
+const apiBackendEndpoint = "https://makecode.com/api";
 
 export const getGameCodeAsync = async (kioskCode: string) => {
-    const getGameCodeUrl = `${kioskBackendEndpoint}/code/${kioskCode}`; 
+    const getGameCodeUrl = `${kioskBackendEndpoint}/code/${kioskCode}`;
     let response = await fetch(getGameCodeUrl);
     if (!response.ok) {
-        throw new Error("Unable to get data from the kiosk.");
+        const e =  new Error(response.statusText);
+        e.name = "PollError";
+        throw e;
     } else {
-        const gameCode = (await response.json())?.code;
-        if (gameCode !== "0") {
-            return gameCode;
+        const gameCodeList = JSON.parse((await response.json())?.shareIds);
+        if (gameCodeList?.length) {
+            return gameCodeList;
         }
-        throw new Error("Invalid game code");
     }
 }
 
@@ -19,7 +21,9 @@ export const generateKioskCodeAsync = async () => {
     const codeGenerationUrl = `${kioskBackendEndpoint}/newcode`;
     const response = await fetch(codeGenerationUrl);
     if (!response.ok) {
-        throw new Error("Unable to generate kiosk code");
+        const e =  new Error(response.statusText);
+        e.name = "KioskCodeGenError";
+        throw e;
     } else {
         try {
             const newKioskCode = (await response.json()).code;
@@ -33,23 +37,25 @@ export const generateKioskCodeAsync = async () => {
 
 export const addGameToKioskAsync = async (kioskId: string | undefined, gameShareId: string | undefined) => {
     const updateKioskUrl = `${kioskBackendEndpoint}/updatecode`;
-    try {
-        const response: Response = await fetch(updateKioskUrl, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                "kioskCode": kioskId,
-                "shareId": gameShareId
-            }),
-        });
-        await response.json();
+    const response: Response = await fetch(updateKioskUrl, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "kioskCode": kioskId,
+            "shareId": gameShareId
+        }),
+    });
+
+    if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`)
+    } else {
+        return await response.json();
     }
-    catch (error) {
-        throw new Error("Failed to post game to the kiosk");
-    }
+
+
 }
 
 export const getGameDetailsAsync = async (gameId: string) => {
