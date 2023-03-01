@@ -16,7 +16,7 @@ The code for a simple card is already in the workspace.<br/>
 
 ---
 
-- :mouse pointer:  You can keep adding to this card or change it to be something completely different.
+- :mouse pointer:  You can add to this card or change it to be something completely different.
 
 
 💡 **Tip:** _If your code isn't working and you can't figure out why, click "Replace my code" to replace the blocks in your workspace with new starter code._
@@ -34,7 +34,7 @@ music.startSong(assets.song`birthday`, false)
 
 ## {Step 3}
 
-Add some music that plays when the **A button** is pressed.
+Add some music that plays when the **(A) button** is pressed.
 
 ---
 
@@ -93,11 +93,11 @@ Add another message to your card to show you care.
 
 ---
 
-- :circle:  From ``||game:Game||`` grab
+- :circle:  From ``||game:Game||``, grab
 ```block
     game.showLongText("To the greatest Earth I know", DialogLayout.Bottom)
 ```
-and snap it in at **the top** of the<br/>
+and snap it in at **the bottom** of the<br/>
 ``||controller(noclick):on [A] button [pressed]||``<br/>
 container.
 
@@ -119,9 +119,10 @@ game.showLongText("To the greatest Earth I know", DialogLayout.Bottom)
 ``` blocks
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(music.createSong(hex`0078000408020108001c000e050046006603320000040a002d000000640014000132000201000244000000040002222c04000800012508000c000220250c00100002222a10001400031d242a14001800012518001c00021b221c002000012720002400012a24002800031d2427`), music.PlaybackMode.InBackground)
+
     //@highlight
     game.showLongText("Happy Earth Day", DialogLayout.Bottom)
-    music.play(music.createSong(hex`0078000408020108001c000e050046006603320000040a002d000000640014000132000201000244000000040002222c04000800012508000c000220250c00100002222a10001400031d242a14001800012518001c00021b221c002000012720002400012a24002800031d2427`), music.PlaybackMode.InBackground)
 })
 
 ```
@@ -158,8 +159,10 @@ hint~
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     //@highlight
     game.setDialogFrame(sprites.dialog.mediumLeaf1)
-    game.showLongText("Happy Earth Day", DialogLayout.Bottom)
     music.play(music.createSong(hex`0078000408020108001c000e050046006603320000040a002d000000640014000132000201000244000000040002222c04000800012508000c000220250c00100002222a10001400031d242a14001800012518001c00021b221c002000012720002400012a24002800031d2427`), music.PlaybackMode.InBackground)
+
+
+    game.showLongText("Happy Earth Day", DialogLayout.Bottom)
     })
 
 ```
@@ -212,8 +215,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     //@highlight
     game.setDialogTextColor(1)
     game.setDialogFrame(sprites.dialog.mediumLeaf1)
-    game.showLongText("Happy Earth Day", DialogLayout.Bottom)
     music.play(music.createSong(hex`0078000408020108001c000e050046006603320000040a002d000000640014000132000201000244000000040002222c04000800012508000c000220250c00100002222a10001400031d242a14001800012518001c00021b221c002000012720002400012a24002800031d2427`), music.PlaybackMode.InBackground)
+
+    game.showLongText("Happy Earth Day", DialogLayout.Bottom)
     })
 ```
 
@@ -232,11 +236,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## {Finale}
 
-**🎊 Congrats 🎊**
+**✨ Congrats ✨**
 
-Now you have a card that any friend would be excited to get!
+You have made a card that any friend would be excited to get!
 
-Click **Done** to return to the main skillmap to move on to the next level where you will create a joke!
+Click **Done** to return to the main skillmap to share your card with a friend, then move on to the next level where you will create a joke!
 
 
 ```blockconfig.global
