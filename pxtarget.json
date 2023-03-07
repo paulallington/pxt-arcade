@@ -14,7 +14,7 @@
         "packages": true,
         "publishing": false,
         "githubPackages": true,
-        "apiRoot": "https://www.makecode.com/api/",
+        "showBadges": true,
         "cloudProviders": {
             "github": {
                 "id": "github",
