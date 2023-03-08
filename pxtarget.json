@@ -8,13 +8,15 @@
     "corepkg": "device",
     "cloud": {
         "workspace": false,
-        "sharing": false,
+        "sharing": true,
         "thumbnails": false,
         "importing": true,
         "packages": true,
         "publishing": false,
         "githubPackages": true,
+        "apiRoot": "https://www.makecode.com/api/",
         "showBadges": true,
+        "showSharingButton": false,
         "cloudProviders": {
             "github": {
                 "id": "github",
