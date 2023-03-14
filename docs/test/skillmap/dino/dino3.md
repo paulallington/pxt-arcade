@@ -27,10 +27,7 @@ Let's add a new kind of projectile, an ``||sprites:Enemy||``!
 
 ---
 
-- :paper plane:  Grab the  
-``||loops:forever||``  
-loop container and drop it into an empty area of the workspace.
-
+- :redo:  From the ``||loops:Loops|`` category, grab
 ```block
 forever(function () {
     let tourist = sprites.createProjectileFromSide(img`.`, -90, 0)
@@ -38,8 +35,13 @@ forever(function () {
     pause(2100)
 })
 ```
+and drop it into an empty area of the workspace.
 
-- :paint brush:  Click the empty grey box in the ``||sprites:projectile [ ] from side||`` block for ``||variables(noclick):tourist||`` and toggle to **My Assets** to select the blue car.
+- :paint brush:  Click the empty box in the <br/>
+``||sprites:projectile [ ] from side||`` <br/>
+block for ``||variables(noclick):tourist||``
+and switch to **My Assets** to select the blue car called **tourist**.
+
 
 ```blockconfig.local
 forever(function () {
@@ -63,18 +65,19 @@ forever(function () {
 
 ## {Step 4}
 
-**Our new enemy isn't quite ready.**
+**Our enemy isn't quite ready.**<br/>
 We still have to set the vertical positions on the screen.
 
 ---
 
-- :paper plane:  Wwe'll need to grab  
-
+- :paper plane:  From ``||sprites:Sprites||``, grab
 ```block
 let tourist: Sprite = null
 tourist.y = randint(15, 115)
 ```
-and snap it in **below** the projectile block. This causes our tourist ``||sprites:Enemy||`` sprites to start at a different height each time.
+and snap it **right below** the ``||variables(noclick):tourist||`` **set projectile** block.
+
+This causes our ``||sprites(noclick):Enemy||`` sprites to start at a different height each time.
 
 #### ~ tutorialhint
 
@@ -91,7 +94,7 @@ forever(function () {
 ## {Step 6}
 
 
-**🎮 Now try your game on the game screen 🎮**
+- :binoculars: Try your game on the game screen.
 
 How is it working?
 
@@ -107,15 +110,17 @@ What are we going to do about it?
 ---
 
 
-- :paper plane:  Since tourist cars are now enemies, grab from ``||sprites:Sprites||`` the  
-
+- :paper plane:  From ``||sprites:Sprites||``, grab
 ```block
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     info.changeLifeBy(-1)
 })
 ```
-block. This has code to reduce our life points when Mama gets hit by a tourist.
+and drop it into an **empty area** of the workspace.
+
+This has code to reduce our life points when Mama gets hit by a tourist.
+
 
 ```blockconfig.local
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -135,13 +140,38 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 ```
 
 
+
+
 ## {Step 9}
 
-**What an amazing creation!**
+- :binoculars: Play your game!
 
-This game has it all...drama, enemies, winning, and losing!  Play it through before moving along.
+This game has it all...drama, enemies, winning, and losing!
 
-When you're done, click **Done** to return to the main page where you can share your game with family and friends!
+**Can you get more than 15 points before time runs out?**
+
+
+
+## {Finale}
+
+**What an amazing creation!**<br/>
+🚗 🚗 🚗
+
+
+~hint How do I share my game?💡
+
+---
+
+**Want to share your project?**
+
+Click **Done** to get back out to the skillmap, then look in the lower-right corner for the share button.
+
+![Share your card](/static/skillmap/dino/share.gif )
+
+hint~
+
+
+When you're finished, click **Done** to return to the main page where you can share your game with family and friends!
 
 
 

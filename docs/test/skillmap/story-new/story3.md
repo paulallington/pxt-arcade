@@ -11,14 +11,14 @@ Making a joke (or a short story) in Arcade is a lot like creating a greeting car
 You can use a background and text to convey a sense of emotion and
 add style.
 
-![Here's the story](/static/skillmap/story/story3.gif "Why do tropical fish like saltwater?" )
+![Here's the story](/static/skillmap/story/story3.gif )
 
 
 ## {Step 2}
 
-To prepare for the next steps,
+To prepare for the next steps,<br/>
 [__*click here to choose a joke from our list*__](#doc:/skillmap/story/joke-examples "Find a good two line joke here.")
-...or create your own!
+<br/>...or create your own!
 
 #### ~ tutorialhint
 Q: Why do tropical fish swim in saltwater?
@@ -95,7 +95,7 @@ it into **the end** of the<br/>
  container.
 
 
-- :mouse pointer:  Create the perfect character for your joke by clicking the grey box so you can draw something in the image editor.
+- :mouse pointer:  Create the perfect character for your joke by clicking the empty grey box so you can draw something in the image editor.
 
 #### ~ tutorialhint
 
@@ -143,7 +143,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () { })
 
 ## {Step 7}
 
-Add your first line to the joke.
+Add the first line of the joke.
 
 ---
 
@@ -159,7 +159,7 @@ container that you just added to the workspace.
 
 - :mouse pointer: Add the first line of your joke into the empty text area.
 
-💡 _You can also change where your text shows up by clicking ``||game: [bottom]||`` and switching that to a different area._
+💡 _You can also change where your text shows up by clicking_ ``||game: bottom||`` _and switching that to a different area._
 
 
 
@@ -196,7 +196,7 @@ Add whatever blocks you need into the  <br/>
 ``||controller(noclick):on [A] button [pressed]||``</br>
 container already in the workspace.
 
-You can use only <br/>``||game:show long text " "||`` <br/>blocks, or switch it up with some other options.
+You can use <br/>``||game:show long text " "||`` <br/>blocks, or switch it up with some other options.
 
 ~hint What are my text options? 💡
 
@@ -270,7 +270,7 @@ Is it funny?  Does the text overlap anything important on the screen?
 
 ---
 
-- :mouse pointer:  If the blocks you're using have location options, try experimenting with text positions.
+- :mouse pointer:  If the blocks you're using have options, try different text positions.
 
 Will the text flow better somewhere else?
 
@@ -367,14 +367,17 @@ with family and friends!
 let mySprite: Sprite = null
 carnival.addLabelTo(" ", carnival.Areas.Top)
     mySprite.sayText("What's a punchline?")
+pauseUntil(() => controller.anyButton.isPressed())
 ```
 
 ```package
-carnival=github:microsoft/arcade-tutorial-extensions/carnival/
+carnival=github:microsoft/arcade-carnival#v0.0.7
 arcade-animations=github:microsoft/arcade-character-animations
 ```
 
 ```ghost
+pause(1000)
+pauseUntil(() => controller.anyButton.isPressed())
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     characterAnimations.loopFrames(
     mySprite,
@@ -423,7 +426,7 @@ true
 carnival.addLabelTo("Press (A) for a joke", carnival.Areas.Top, 2)
 scene.cameraShake(4, 500)
     mySprite.setVelocity(-20, 0)
-
+scene.setBackgroundColor(1)
 ```
 
 
