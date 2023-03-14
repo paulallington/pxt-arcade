@@ -527,7 +527,7 @@
         "privacyUrl": "https://www.thecodezone.co.uk/privacy",
         "termsOfUseUrl": "https://www.thecodezone.co.uk/terms",
         "githubUrl": "",
-        "boardName": "PyClub",
+        "boardName": "Game Dev Club",
         "addNewTypeScriptFile": true,
         "docMenu": [
             {
@@ -650,7 +650,8 @@
         "multiplayer": true,
         "shareToKiosk": true,
         "songEditor": true,
-        "tczApi": true
+        "tczApi": true,
+        "tczApiDomain": "https://api.thecodezone.co.uk"
     },
     "queryVariants": {
         "skillsMap=1": {
