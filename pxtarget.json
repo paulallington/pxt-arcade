@@ -23,7 +23,7 @@
                 "name": "GitHub",
                 "icon": "/static/providers/github-mark.png",
                 "identity": false,
-                "order": 3
+                "order": 4
             },
             "microsoft": {
                 "id": "microsoft",
@@ -40,6 +40,14 @@
                 "identity": true,
                 "redirect": true,
                 "order": 2
+            },
+            "clever": {
+                "id": "clever",
+                "name": "Clever",
+                "icon": "/static/providers/clever-logo.png",
+                "identity": true,
+                "redirect": true,
+                "order": 3
             }
         }
     },
@@ -114,8 +122,10 @@
         "base": [
             "libs/hw",
             "libs/hw---n3",
+            "libs/hw---n4",
             "libs/hw---samd51",
-            "libs/hw---stm32f401"
+            "libs/hw---stm32f401",
+            "libs/hw---rp2040"
         ],
         "extensions": [
             "libs/accelerometer",
@@ -551,6 +561,7 @@
             "de",
             "fr",
             "ja",
+            "ko",
             "es-ES",
             "es-MX"
         ],
@@ -565,7 +576,7 @@
         "homeScreenHero": {
             "imageUrl": "/static/hero-gallery/multiplayer-banner.png",
             "name": "Multiplayer Games!",
-            "url": "https://arcade.makecode.com/--multiplayer",
+            "url": "/--multiplayer",
             "buttonLabel": "Try Now",
             "description": "Multiplayer Games!",
             "cardType": "link"
@@ -651,14 +662,21 @@
         "shareToKiosk": true,
         "songEditor": true,
         "tczApi": true,
-        "tczApiDomain": "https://api.thecodezone.co.uk"
+        "tczApiDomain": "https://thecode.zone",
+        "shareToKiosk": true,
+        "tours": {
+            "editor": "/tours/editor-tour"
+        },
+        "showOpenInVscode": true,
+        "hideReplaceMyCode": true
     },
     "queryVariants": {
         "skillsMap=1": {
             "appTheme": {
                 "embeddedTutorial": true,
                 "allowParentController": true,
-                "shareFinishedTutorials": false
+                "shareFinishedTutorials": false,
+                "hideReplaceMyCode": false
             }
         }
     },
@@ -668,6 +686,7 @@
         }
     ],
     "uploadDocs": true,
+    "noSimShims": true,
     "defaultBadges": [
         {
             "id": "skillmap-completion-save the forest",

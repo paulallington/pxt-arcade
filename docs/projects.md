@@ -3,16 +3,27 @@
 ```codecard
 [
     {
-        "name": "Skillmaps",
-        "url": "/skillmaps",
-        "imageUrl": "/static/skillmap/backgrounds/beginner.png"
+        "name": "Beginner Skillmaps",
+        "url": "/beginner-maps",
+        "imageUrl": "/static/skillmap/backgrounds/story-map.png"
+    },
+    {
+        "name": "Next Level Skillmaps",
+        "url": "/inter-maps",
+        "imageUrl": "/static/skillmap/backgrounds/galaxy-map.png"
     },
     {
         "name": "Tutorials",
         "url": "/tutorials",
-        "imageUrl": "/static/tutorials/chase-the-pizza.png",
-        "largeImageUrl": "/static/tutorials/chase-the-pizza.gif",
+        "imageUrl": "/static/tutorials/interface/info.png",
+        "largeImageUrl": "/static/tutorials/interface/info.png",
         "videoUrl": "/static/tutorials/chase-the-pizza.mp4"
+    },
+    {
+        "name": "Multiplayer Tutorials",
+        "url": "/multiplayer-tutorials",
+        "imageUrl": "/static/tutorials/pizza-party/playtime.png",
+        "largeImageUrl": "/static/tutorials/pizza-party/playtime.png"
     },
     {
         "name": "Multiplayer Games",
@@ -42,7 +53,7 @@
     {
         "name": "Game Jam",
         "url": "/game-jam",
-        "imageUrl": "https://pxt.azureedge.net/api/39412-25824-36790-82290/thumb"
+        "imageUrl": "https://pxt.azureedge.net/api/22414-21049-08990-36399/thumb"
     },
     {
         "name": "Advanced Livestream",
@@ -110,8 +121,10 @@
 
 ## See Also
 
-[Skillmaps](/skillmaps),
+[Beginner Skillmaps](/beginner-maps),
+[Next Level Skillmaps](/inter-maps),
 [Tutorials](/tutorials),
+[Multiplayer Tutorials](/multiplayer-tutorials),
 [Multiplayer Games](/multiplayer-games),
 [Live Coding](/live-coding),
 [Blocks Games](/blocks-games),

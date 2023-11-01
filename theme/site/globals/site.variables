@@ -54,6 +54,9 @@
      PXT Variables
 *******************************/
 
+@loaderImageUrl: "../docs/static/Micorsoft_logo_rgb_W-white_D-square.png";
+@loaderImageSize: 80%;
+
 /*-------------------
    Menu
 --------------------*/
@@ -81,8 +84,8 @@
 @simulatorBackground: #f8b133;
 @editorToolsBackground: @beige;
 @blocklySvgColor: @beige;
-
 @homeScreenBackground: @beige;
+@cloudCardBackground: lighten(desaturate(@teal, 56), 23);
 
 /*-------------------
    Full screen
@@ -128,3 +131,10 @@
    Cloud Status
 ----------------------------*/
 @cloudStatusColor: @teal;
+
+/*---------------------------
+   Teaching Bubble
+----------------------------*/
+@teachingBubbleBackgroundColor: @teal;
+@teachingBubbleTextColor: @white;
+@teachingBubbleStepsColor: @beige;

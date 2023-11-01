@@ -204,7 +204,7 @@ function makeGallery() {
             container.insertBefore(hint, parent);
         }
 
-        let selected = randomize(info.featured); // show all the games
+        let selected = randomize(info.featured?.filter(g => !g.description)); // show all the games
         let row = document.createElement("div");
         for (let i = 0; i < selected.length; i++) {
             row.appendChild(makeGameCard(selected[i]));
@@ -229,6 +229,15 @@ function makeGameCard(game: Game) {
     let textLink = link.cloneNode() as HTMLElement;
     let img = document.createElement("img");
     img.src = `https://pxt.azureedge.net/api/${game.id}/thumb`;
+    img.onerror = () => {
+        let div = document.createElement("div");
+        div.setAttribute("class", "placeholder");
+        let logo = document.createElement("img");
+        logo.src = "/static/logo.png";
+        div.appendChild(logo);
+        img.remove();
+        link.appendChild(div);
+    }
     link.appendChild(img);
     card.appendChild(link);
 
