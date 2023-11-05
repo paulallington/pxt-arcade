@@ -674,7 +674,7 @@
         "skillsMap=1": {
             "appTheme": {
                 "embeddedTutorial": true,
-                "allowParentController": true,
+                "allowParentController": false,
                 "shareFinishedTutorials": false,
                 "hideReplaceMyCode": false
             }
