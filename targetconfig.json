@@ -121,8 +121,16 @@
                 "preferred": true,
                 "tags": [ "Hardware" ]
             },
-            "code-ninjas-home-office/game-building-session-tutorials": {},
-            "microsoft/arcade-carnival": {}
+            "microsoft/arcade-carnival": {},
+            "code-ninjas-home-office/game-building-session-tutorials": {
+                "tutorial" : true
+            },
+            "code-ninjas-home-office/code-ninjas-tutorials": {
+                "tutorial" : true
+            },
+            "code-ninjas-home-office/arctic-code-quest": {
+                "tutorial" : true
+            }
         },
         "builtinExtensionsLib": {
             "controller": {
@@ -270,6 +278,13 @@
             "description": "A fun-sized console to play the games you code.",
             "imageUrl": "/static/hardware/gamego.jpg",
             "url": "https://www.tinkergen.com/gamego",
+            "variant": "hw---stm32f401"
+        },
+        {
+            "name": "MRT Game Maker Kit",
+            "description": " Sleek hand-held game device with a hard case and a USB-C port.",
+            "imageUrl": "/static/hardware/mrt-gamemaker-kit.png",
+            "url": "https://www.myrobottime.co.kr/gamemakerkit",
             "variant": "hw---stm32f401"
         },
         {

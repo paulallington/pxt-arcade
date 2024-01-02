@@ -18,11 +18,13 @@ before the time runs out!
 
 ## {Step 2}
 
-**Start with a background color...**
+**Set the background color**
 
 ---
 
-- :tree: Open the ``||scene:Scene||`` toolbox drawer and drag <br/>
+- :tree: Open the <br/>
+``||scene:Scene||``<br/>
+toolbox drawer and drag <br/>
 ``||scene:set background color [ ]||`` <br/>
 into **the empty** ``||loops(noclick):on start||`` container already in your workspace. 
 
@@ -42,6 +44,8 @@ scene.setBackgroundColor(13)
 
 hint~
 
+💡 _Feel free to choose your own color if you don't like the swatch in the block._ 
+
 
 ---
 
@@ -58,7 +62,16 @@ scene.setBackgroundColor(13)
 
 ## {Step 3}
 
-Time to add a player **sprite**.
+Add a player **sprite**.
+
+---
+
+- :paper plane: Open the ``||sprites:Sprites||`` drawer and drag <br/>
+``||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||`` <br/>
+into **the end of** the  ``||loops(noclick):on start||`` block already in your workspace.
+
+---
+
 
 ~hint What's a sprite? 💡
 
@@ -73,13 +86,6 @@ Our player will be a sprite, too.
 
 hint~
 
----
-
-- :paper plane: Open the ``||sprites:Sprites||`` drawer and drag <br/>
-``||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||`` <br/>
-into **the end of** the  ``||loops(noclick):on start||`` block already in your workspace.
-
----
 
 ~hint Show me 🔍
 
@@ -103,7 +109,7 @@ mySprite = sprites.create(img`.`, SpriteKind.Player)
 block to open the **Sprite Editor**. 
 
 
-- :mouse pointer: Click **Done** when you are finished.
+- :mouse pointer: Click **Done** when you are finished drawing.
 
 ~hint Show me 🔍
 
@@ -150,7 +156,7 @@ mySprite = sprites.create(img`
 into **the end of** the <br/>
 ``||loops(noclick):on start||`` block already in your workspace.
 
-Now you can move your sprite around the screen using the arrow keys. 
+Now you can move your sprite around the screen using the arrow buttons on the game pad or your keyboard. 
 
 
 ~hint Show me 🔍
@@ -194,7 +200,7 @@ controller.moveSprite(mySprite)
 
 - :binoculars: Test your project in the game window!
 
-You should be able to move your sprite with the arrow keys.
+You should be able to move your sprite with the joypad or arrow keys on your keyboard.
 
 
 ![Look for the game window in the lower right](/static/tutorials/chase-the-pizza/game.png)
@@ -267,7 +273,7 @@ pizza = sprites.create(img`.`, SpriteKind.Food)
 ## {Step 8}
 
 
-- :mouse pointer: Draw your sprite by clicking the empty grey square inside <br/> 
+- :mouse pointer: Choose your pizza by clicking the empty grey square inside <br/> 
 ``||variables(noclick):set [pizza] to sprite [ ] of kind [Food]||`` <br/>
 to open the **Sprite Editor**. 
 
@@ -279,9 +285,12 @@ to open the **Sprite Editor**.
 
 ~hint Show me 🔍
 
-![Image gallery](/static/tutorials/chase-the-pizza/image-gallery.gif)
+![Image gallery](/static/tutorials/chase-the-pizza/gallery.gif)
 
 hint~
+
+
+💡 _Feel free to draw your own pizza if you prefer!_
 
 ```blockconfig.local
 let pizza = sprites.create(img`.`, SpriteKind.Player)
@@ -343,6 +352,10 @@ b 5 5 5 5 d d 4 4 4 4 . . . . .
 - :paper plane: Open ``||sprites:Sprites||`` and drag the<br/>
 ``||sprites:on [sprite] of kind [Player] overlaps [otherSprite] of kind [Food]||``<br/>
 container into **an empty area** of the workspace.
+
+
+🤷🏽‍♀️ _Need help? Click the lightbulb in the circle below to see what blocks you need in this step._
+
 
 
 ```blockconfig.local
@@ -418,14 +431,14 @@ In Arcade, we use this block:
 randint(0, scene.screenWidth())
 ```
 
-to ask for a random number that between **1** and the **width of the screen**.
+to ask for a random number between **0** and the **width of the screen**.
 
 hint~
 
 ---
 
 - :paper plane: Open ``||sprites:Sprites||``, and drag <br/>
-``||sprites:set [pizza] position to||``<br/> 
+``||sprites:set [pizza] position to...||``<br/> 
 into the **end of the** <br/>
 ``||sprites(noclick):on [sprite] ... overlaps [otherSprite]||`` <br/>
 container already in the workspace.
@@ -448,14 +461,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 
 
-## {Step 17}
+## {Step 13}
 
 **Let’s start a countdown each time the sprites overlap.**
 
 ---
 
 - :id card: From ``||info:Info||``, drag <br/>
-``||info:start countdown [5] (s)||`` <br/> 
+``||info:start countdown [3] (s)||`` <br/> 
 into the **end of the** <br/>
 ``||sprites(noclick):on [sprite] ... overlaps [otherSprite]||`` <br/>
 container already in the workspace.
@@ -472,7 +485,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 	info.changeScoreBy(1)
     pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
     // @highlight
-    info.startCountdown(5)
+    info.startCountdown(3)
 })
 ```
 
@@ -539,8 +552,7 @@ b 5 5 5 5 d d 4 4 4 4 . . . . .
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
 	info.changeScoreBy(1)
     pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
-    // @highlight
-    info.startCountdown(10)
+    info.startCountdown(3)
 })
 ```
 
@@ -552,7 +564,7 @@ scene.setBackgroundColor(13)
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {})
 randint(0, scene.screenWidth())
 pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
-info.startCountdown(5)
+info.startCountdown(3)
 
 ```
 

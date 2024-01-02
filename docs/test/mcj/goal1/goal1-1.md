@@ -5,18 +5,22 @@
 
 
 
-![How to win](/static/mkj/goal/goal1-2.gif "Walk forward to get to the ball!")
+![How to win](/static/mcj/goal/goal1-1.gif "Walk forward to get to the ball!")
 
 
 
 ## {One Step}
 
-![How to build](/static/mkj/goal/how1-2.gif "Add three right arrows")
+![How to build](/static/mcj/goal/how1-1.gif "Add three right arrows")
 
-<!-->
-# {How to Run}
 
-![How to Check](/static/mkj/goal/check1-2.gif "Click the A button on the game window") -->
+<!--
+
+## {How to run}
+
+![How to Check](/static/mcj/goal/check1-1.gif "Click the A button on the game window")
+
+-->
 
 
 ```blocks
@@ -31,7 +35,7 @@
 ## Great Job! @showdialog
 
 
- <!-- [![Level 2](/static/mkj/assets/next.png)](beta#recipe:/mkj/goal/goal1-2) -->
+ [![Level 2](/static/mcj/assets/next.png)](https://arcade.makecode.com/beta#recipe:/test/mcj/goal1/goal1-2)
 
 
 
@@ -41,7 +45,6 @@ pxt-characterAnimations=github:microsoft/arcade-character-animations/
 pxt-block-icons=github:jwunderl/arcade-block-icons/
 makecodejr-assets=github:kiki-lee/makecodejr-assets#v0.0.3/
 ```
-
 
 ```simtheme
 {
@@ -66,6 +69,7 @@ makecodejr-assets=github:kiki-lee/makecodejr-assets#v0.0.3/
         ]
 }
 ```
+
 
 
 
@@ -95,7 +99,7 @@ let aPressed = 0
 
 scene.setBackgroundImage(makecodejrassets.bg1)
 scene.setBackgroundColor(1)
-tiles.setTilemap(makecodejrassets.goal2)
+tiles.setTilemap(makecodejrassets.goal1)
 mySprite = sprites.create(makecodejrassets.dino, SpriteKind.Player)
 tiles.placeOnRandomTile(mySprite, makecodejrassets.gstart)
 characterAnimations.loopFrames(
