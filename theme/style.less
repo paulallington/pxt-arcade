@@ -48,14 +48,23 @@
     .image-editor-coordinate-preview {
         flex-grow: 0.75 !important;
     }
+.ui.primary.button.download-button {
+    background-color: @secondaryColor;
+}
 
     #serialConsole {
         background-color: #fef3e0 !important;
     }
+.simtoolbar .ui.button.icon, #editortools .ui.button.editortools-btn {
+    background-color: @secondaryColor;
+}
 
     #serialEditor {
         background-color: #fef3e0 !important;
     }
+#editortools .ui.button.hw-button {
+    background-color: darken(@secondaryColor, 15%);
+}
 
     .fullscreen.extensions-browser > {
         .common-modal > {
@@ -95,6 +104,25 @@
     .projectsdialog .getting-started-segment {
         background-position-y: center;
     }
+.carouselarrow {
+    color: @secondaryColor;
+}
+
+.projectsdialog .detailview .ui.grid.stackable .actions .card-action .button.approve {
+    background-color: @primaryColor;
+}
+
+.extensions-browser {
+    .extension-tag.selected {
+        background-color: @primaryColor;
+        border-color: @primaryColor;
+        color: @white
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: @largestMobileScreen) {
+}
 
     .projectsdialog .ui.card:hover {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
